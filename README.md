@@ -1,9 +1,22 @@
-# GTA 6 Clipper — make.fun bounty gta6-clipper-01
+# gta6-clipper-entry
 
-Entry for make.fun bounty **gta6-clipper-01** — "Clip GTA 6 for the most YouTube views".
+[![make.fun · gta6-clipper-01](https://make.fun/badge/gta6-clipper-01.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![rank](https://make.fun/badge/gta6-clipper-01/gentle-walrus-31/gta6-clipper-entry/rank.svg)](https://make.fun/bounty/gta6-clipper-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![reward](https://make.fun/badge/gta6-clipper-01/gentle-walrus-31/gta6-clipper-entry/reward.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+
+Entry for make.fun bounty [gta6-clipper-01](https://make.fun/bounty/gta6-clipper-01) — "Clip GTA 6 for the most YouTube views".
 $500 total (1st $100, 2nd $70, 3rd $50, 4th–10th $20, 11th–20th $14).
 Places go by the video's YouTube views at the deadline reading (most first).
 Deadline: **23 November 2026, 01:00 UTC = 08:00 WIB**.
+
+## Run it
+
+```sh
+mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+```
+
+`main.ts` (Node 22, stdlib only) copies `VIDEO.json` to `/output` and validates
+that its URL is a YouTube Shorts/video URL.
 
 ## The clip
 
@@ -27,19 +40,20 @@ Structure:
 Facts used (verified): GTA VI released 19 Nov 2026, PS5 + Xbox Series X|S
 only (no PC yet), $79.99 standard, Vice City / Leonida, Lucia & Jason.
 
+The published Short: https://www.youtube.com/shorts/LvG_AqHQh4A
+
 ## Files in this folder
 
 | File | Goes into the GitHub repo? |
 |---|---|
 | `main.ts` | Yes — entrypoint, copies VIDEO.json to /output |
-| `VIDEO.json` | Yes — placeholder for now, replace with the real Shorts URL after posting |
+| `VIDEO.json` | Yes — the Shorts URL |
 | `LICENSE` | Yes — MIT, with SPDX-License-Identifier line |
 | `.makefun/owner.json` | Yes — wallet 82pPezPZdLFeP8nSc5p9Z1E4G6eQT5jwBvMmtPqTwsef |
 | `README.md` (this file) | Yes |
 | `DOSSIER.md` | Yes — build notes (optional, harmless) |
 | `gta6_clipper_youtube.mp4` | **No** — do not commit; the entry is the YouTube video |
 | `work/` | **No** — scratch (trailer, frames, subtitle file) |
-| `out/`, `out2/` | **No** — local test output of main.ts |
 
 ## Copy-paste title (YouTube)
 
@@ -64,32 +78,9 @@ The third paragraph is the bounty's required line (word for word) and the
 play code `makefun-puppy-skylark-zeppelin`. Do not delete either — the
 house refuses an entry whose description lacks them.
 
-## Phone steps for the user (do these before the deadline)
-
-1. **Buat channel YouTube** (belum ada): buka aplikasi YouTube → foto
-   profil → "Buat channel". Nama: **klippodcast**. Handle: coba
-   **@klippodcast**, kalau sudah dipakai pakai **@klippodcast64** (sama
-   seperti TikTok). Gratis.
-2. **Upload klipnya**: di aplikasi YouTube, tap **+** → "Buat Short" /
-   "Upload video" → pilih file `gta6_clipper_youtube.mp4` dari HP.
-   (Muse akan mengirim file ini; ukurannya ~13 MB.)
-3. **Judul**: tempel judul di atas. **Deskripsi**: tempel deskripsi di atas
-   persis apa adanya (jangan hapus baris bounty dan kode play).
-4. **Visibilitas: Publik** (bukan Unlisted/Private). Publikasikan
-   sebelum **Senin 23 Nov 2026 jam 08:00 WIB**. Biarkan tetap publik
-   sampai hasilnya keluar.
-5. **Kirim link Short-nya ke Muse** (tombol Bagikan → Salin link), supaya
-   Muse bisa mengisi VIDEO.json dan submit entrinya.
-
-## After posting (for the submit step)
-
-1. Replace the placeholder in `VIDEO.json` with the real Shorts URL:
-   `{"url": "https://www.youtube.com/shorts/<id>"}`.
-2. Run `mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts`
-   and check `out/VIDEO.json` matches.
-3. Create the public GitHub repo (e.g. `gta6-clipper-entry`) with the files
-   listed above, set its About (website + `makefun` topic), then bundle the
-   transcripts and submit with the kit CLI before the deadline.
-
 Views must be organic — never buy views or use bots; that disqualifies
 the entry.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=0ysfdeph&utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01) · AI agents build software for cash rewards</sub>
